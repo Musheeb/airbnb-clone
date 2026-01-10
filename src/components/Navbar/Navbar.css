@@ -1,0 +1,11 @@
+nav--logo {
+  max-width: 100px;
+  /* width: 82.02px; */
+  /* height: 25.35px; */
+}
+.nav-bar {
+  height: 70px;
+  color: #ffffff;
+  box-shadow: 0px 3px 7px 0px #0000001a;
+  display: flex;
+}

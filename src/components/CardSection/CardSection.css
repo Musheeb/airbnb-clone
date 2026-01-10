@@ -1,0 +1,34 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+/* .card-image {
+  width: 176px;
+  height: 235px;
+} */
+.card-star {
+  width: 15px;
+  height: 15px;
+}
+.card-rating {
+  display: flex;
+  align-items: center;
+  /* background-color: blue; */
+}
+.card-rating > p {
+  margin: 5px;
+}
+.card-rating > p > span {
+  color: #918e9b;
+}
+.card-title {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.card-rate {
+  margin-top: 0;
+}
+.card-rate > span {
+  font-weight: bold;
+}
