@@ -1,7 +1,27 @@
 .card-container {
   display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.card-single {
+  display: flex;
   flex-direction: column;
+}
+/* .card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   padding: 10px;
+} */
+.card-image {
+  max-width: 176px;
+  height: 235px;
+  object-fit: cover;
+  border-radius: 9px;
 }
 /* .card-image {
   width: 176px;
