@@ -30,3 +30,30 @@ Ans - We get the props in the function parameter that we pass in to components a
 
 5 - What data type is 'props' when the component receives it?
 Ans - Javascript Object
+
+Quiz 2 - 3:48:15
+
+1 - Given an array of number, return an array of each number, squared
+given array - const nums = [1,2,3,4,5];
+Ans -
+const squared = nums.map((num)=>{
+return num \* num;
+});
+console.log(squared);
+// output - [1,4,9,16,25]
+
+2 - Given an array of strings, return an array where the first letter of eah string is capitalized.
+const names = ["alice", "bob", "charlie", "danielle"];
+Ans -
+const capitalized = names.map((name)=>{
+return name.charAt(0).uppercase + name.slice(1);
+});
+console.log(capitalized);
+// Output - ["Alice","Bob", "Charlie", "Danielle"];
+
+3 - Given an array of strings, return an array of strings that wraps every element of the original strings in an HTML-like <p></p> tag.
+const pokemons = ["Bulbasur", "Charamander", "Squirtel"];
+Ans -
+const arrayWithTag = pokemons.map((pkmn)=>{
+return `<p>${pkmn}</p>`
+});

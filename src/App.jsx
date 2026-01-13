@@ -8,8 +8,37 @@ import narcosImage from "./assets/narcosImage.jpg";
 import starImage from "./assets/Star1.png";
 
 function App() {
+  // const nums = [1, 2, 3, 4, 5];
+  // console.log(nums);
+  // const squared = nums.map((num) => num * num);
+  // console.log(squared);
+
+  // const names = ["alice", "bob", "charlie", "danielle"];
+  // console.log(names);
+  // const capitalized = names.map((name) => {
+  //   return name.charAt(0).toUpperCase() + name.slice(1);
+  // });
+  // console.log(capitalized);
+
+  // const pokemons = ["Bulbasur", "Charamander", "Squirtel"];
+  // const pokemonsWithTag = pokemons.map((pokemon) => {
+  //   return `<p>${pokemon}</p>`;
+  // });
+  // console.log(pokemonsWithTag);
+
+  const colors = [
+    <h3>"Violet"</h3>,
+    <h3>"Indigo"</h3>,
+    <h3>"Blue"</h3>,
+    <h3>"Green"</h3>,
+    <h3>"Yellow"</h3>,
+    <h3>"Orange"</h3>,
+    <h3>"Red"</h3>,
+  ];
+
   return (
-    <>
+    <div>
+      {colors}
       <Navbar />
       <HeroSection />
       <div className="card-container">
@@ -95,7 +124,7 @@ function App() {
           cardRateUnit="/ person"
         />
       </div>
-    </>
+    </div>
   );
 }
 
