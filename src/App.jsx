@@ -2,12 +2,16 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import CardSection from "./components/CardSection/CardSection";
-import katieZaferesImage from "./assets/katie-zaferes.png";
-import cristianoImage from "./assets/cristiano.jpg";
-import narcosImage from "./assets/narcosImage.jpg";
-import starImage from "./assets/Star1.png";
+// import katieZaferesImage from "./assets/katie-zaferes.png";
+// import cristianoImage from "./assets/cristiano.jpg";
+// import narcosImage from "./assets/narcosImage.jpg";
+// import starImage from "./assets/Star1.png";
+import data from "./data.js";
 
 function App() {
+  const cardData = data.map((card) => {
+    return <CardSection key={card.id} {...card} />;
+  });
   // const nums = [1, 2, 3, 4, 5];
   // console.log(nums);
   // const squared = nums.map((num) => num * num);
@@ -26,22 +30,23 @@ function App() {
   // });
   // console.log(pokemonsWithTag);
 
-  const colors = [
-    <h3>"Violet"</h3>,
-    <h3>"Indigo"</h3>,
-    <h3>"Blue"</h3>,
-    <h3>"Green"</h3>,
-    <h3>"Yellow"</h3>,
-    <h3>"Orange"</h3>,
-    <h3>"Red"</h3>,
-  ];
+  // const colors = [
+  //   <h3>"Violet"</h3>,
+  //   <h3>"Indigo"</h3>,
+  //   <h3>"Blue"</h3>,
+  //   <h3>"Green"</h3>,
+  //   <h3>"Yellow"</h3>,
+  //   <h3>"Orange"</h3>,
+  //   <h3>"Red"</h3>,
+  // ];
 
   return (
     <div>
-      {colors}
+      {/* {colors} */}
       <Navbar />
       <HeroSection />
-      <div className="card-container">
+      <div className="card-container">{cardData}</div>
+      {/* <div className="card-container">
         <CardSection
           image={katieZaferesImage}
           star={starImage}
@@ -123,7 +128,7 @@ function App() {
           cardRate="From $777"
           cardRateUnit="/ person"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

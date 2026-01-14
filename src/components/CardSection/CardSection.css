@@ -6,6 +6,7 @@
 }
 
 .card-single {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -50,5 +51,14 @@
   margin-top: 0;
 }
 .card-rate > span {
+  font-weight: bold;
+}
+.card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2px 2px;
   font-weight: bold;
 }
